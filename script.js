@@ -17,3 +17,17 @@ var introduce = function (name, occupation) {
 };
 console.log(introduce("Ann", "developer"));
 console.log(introduce("Pujah", "designer"));
+
+// Function with prompt and conditional
+var hydrationFeedback = function () {
+  var numGlasses = Number(
+    prompt("How many glasses of water did you have today? ")
+  );
+  if (numGlasses >= 8) {
+    console.log("Amazing! You must feel good!");
+  } else if (numGlasses < 8) {
+    console.log("Not bad, not bad. Let's try for a bit more tomorrow!");
+  }
+};
+
+hydrationFeedback();
